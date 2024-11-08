@@ -18,48 +18,66 @@
         <div class="simple-container-header">
           <div class="simple-player-number">
             <span class="simple-box-left">YOU </span>
-            <span class="number1">4</span>
+            <span id="simple-point-user" class="simple-number1">0</span>
           </div>
-          <span class="simple-box-center">ROCK PAPER SCISSORS</span>
+
+          <div class="simple-title-center">
+            <span class="simple-text-rock">ROCK</span>
+            <span class="simple-text-paper">PAPER</span>
+            <span class="simple-text-scissors">SCISSORS</span>
+          </div>
+
           <div class="simple-pc-number">
             <span class="simple-box-right">PC </span>
-            <span class="number2">2</span>
+            <span id="simple-point-pc" class="simple-number2">0</span>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="simple-container">
+      <div id="simple-container" class="simple-container">
         <div class="simple-mode-play">
-          <a href="./simple.html">
-            <div class="simple-game">
+          <div id="box-colors" class="simple-game">
+            <img
+              src="../assets/images/bg-triangle.svg"
+              alt="triangle"
+              class="simple-img"
+            />
+            <div class="box1">
               <img
-                class="simple-rock"
-                src="../assets/images/icon-rock.svg"
-                alt="rock"
-              />
-              <img
+                data-img="paper"
+                id="simple-paper"
                 class="simple-paper"
                 src="../assets/images/icon-paper.svg"
                 alt="paper"
               />
+            </div>
+
+            <div class="box2">
               <img
+                data-img="scissors"
+                id="simple-scissors"
                 class="simple-scissors"
                 src="../assets/images/icon-scissors.svg"
                 alt="scissors"
               />
+            </div>
+            <div class="box3">
               <img
-                src="../assets/images/bg-triangle.svg"
-                alt="triangle"
-                class="simple-img"
+                data-img="rock"
+                id="simple-rock"
+                class="simple-rock"
+                src="../assets/images/icon-rock.svg"
+                alt="rock"
               />
             </div>
-          </a>
+          </div>
         </div>
       </div>
+      <div class="simple-result"></div>
     </main>
     <button class="button-rules">RULES</button>
     <div></div>
-    <script src="./js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>

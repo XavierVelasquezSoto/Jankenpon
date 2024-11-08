@@ -83,11 +83,12 @@ body {
 
 
 
-
+/* Pag simple.html */
 
 .simple-container-header{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 311px;
   height: 96px;
   margin-top: 32px;
@@ -105,8 +106,13 @@ body {
     align-items: center;
     justify-content: space-around;
     margin-top: 48px;
+    border-radius: 20px;
   }
 }
+
+
+/* caja jugador */
+
 
 .simple-player-number{
   display: flex;
@@ -124,6 +130,7 @@ body {
   width: 100px;
   height: 88px;
   border-radius: 15px;
+  margin: 0;
   }
 }
 
@@ -135,20 +142,70 @@ body {
   letter-spacing: 1.5px;
 }
 
-.number1{
+.simple-number1{
   font-size: 40px;
   font-weight: 700;
   color: #565468;
 }
 
-.simple-box-center{
+
+/* caja medio */
+
+
+.simple-title-center{
+  width: 83px;
+  height: 48px;
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
 }
 
-.simple-box-center{
-  text-align: center;
-  font-size: 20px;
+@media screen and (width>768px){
+  .simple-title-center{
+    width: 185px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+.simple-text-rock{
+  text-align: center;
+}
+
+@media screen and (width>768px) {
+  .simple-text-rock{
+  font-size: 40px;
+  margin: 0;
+  }
+}
+
+.simple-text-paper{
+  text-align: center;
+}
+
+@media screen and (width>768px) {
+  .simple-text-paper{
+  font-size: 40px;
+  margin: 0;
+  }
+}
+
+.simple-text-scissors{
+  text-align: center;
+}
+
+@media screen and (width>768px) {
+  .simple-text-scissors{
+  font-size: 40px;
+  margin: 0;
+  }
+}
+
+
+/* caja pc */
+
 
 .simple-pc-number{
   display: flex;
@@ -161,11 +218,13 @@ body {
   border-radius: 4px;
 }
 
+
 @media screen and (width>768px){
   .simple-pc-number{
   width: 100px;
   height: 88px;
   border-radius: 15px;
+  margin: 0;
   }
 }
 
@@ -177,48 +236,188 @@ body {
   letter-spacing: 1.5px;
 }
 
-.number2{
+.simple-number2{
   font-size: 40px;
   font-weight: 700;
   color: #565468;
 }
 
 
+/* triangulo */
 
 
-
-
-
-
-
-
-
-
-
+.simple-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+}
 
 .simple-game{
   position: relative;
   width: 312px;
-  width: 282px;
+  height: 282px;
   
 }
 
-.simple-rock{
-  position: absolute;
+.simple-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 166px;
+  height: 188px;
+}
+
+@media screen and (width>768px){
+  .simple-img{
+    width: 254px;
+    height: 287px;
+  }
+}
+
+/* circulos de colores */
+
+.box1{
+  position: relative;
   width: 130px;
   height: 133px;
+  background-color: #FFFFFF;
+  border-radius: 100%;
+  border: 20px solid #4664F4;
+  bottom: 245px;
+  left: 10px;
+}
+
+@media screen and (width>768px){
+  .box1{
+    width: 150px;
+    height: 150px;
+    border: 25px solid #4664F4;
+    bottom: 350px;
+    left: -20px;
+  }
+}
+
+
+.box2{
+  position: relative;
+  width: 130px;
+  height: 133px;
+  background-color: #FFFFFF;
+  border-radius: 100%;
+  border: 20px solid #EB9F0E;
+  bottom: 380px;
+  left: 170px;
+}
+
+@media screen and (width>768px){
+ .box2{
+    width: 150px;
+    height: 150px;
+    border: 25px solid #EB9F0E;
+    bottom: 500px;
+    left: 200px;
+  }
+}
+
+
+.box3{
+  position: relative;
+  width: 130px;
+  height: 130px;
+  background-color: #FFFFFF;
+  border-radius: 100%;
+  border: 20px solid #DB2E4D;
+  bottom: 340px;
+  left: 90px;
+}
+
+@media screen and (width>768px){
+ .box3{
+    width: 150px;
+    height: 150px;
+    border: 25px solid #DB2E4D;
+    bottom: 420px;
+    left: 85px;
+  }
+}
+
+
+/* jankenpon img */
+
+.simple-paper{
+  position: absolute;
+  width: 48px;
+  height: 56px;
+  top: 15px;
+  left: 20px;
+  cursor: pointer;
+}
+
+@media screen and (width>768px){
+  .simple-paper{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.simple-scissors{
+  position: absolute;
+  width: 48px;
+  height: 56px;
+  top: 15px;
+  left: 25px;
+  cursor: pointer;
+}
+
+@media screen and (width>768px){
+  .simple-scissors{
+    width: 60px;
+    height: 60px;
+    left: 20px;
+  }
 }
 
 .simple-rock{
   position: absolute;
-  width: 130px;
-  height: 133px;
+  width: 48px;
+  height: 56px;
+  top: 15px;
+  left: 20px;
+  cursor: pointer;
 }
 
-.simple-rock{
-  position: absolute;
-  width: 130px;
-  height: 133px;
+@media screen and (width>768px){
+  .simple-rock{
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    left: 20px;
+  }
 }
 
 
+/* reglas */
+
+.button-rules{
+  position: relative;
+  width: 128px;
+  height: 44px;
+  border-radius: 8px;
+  color: inherit;
+  background-color: inherit;
+  border: solid #FFFFFF 1px;
+  font-size: 16px;
+  font-weight: 600;
+  left: 35%;
+  top: 50px;
+}
+
+@media screen and (width>768px) {
+  .button-rules{
+    position: relative;
+    left: 85%;
+  }
+}
