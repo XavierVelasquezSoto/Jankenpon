@@ -28,7 +28,6 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   background: radial-gradient(#1F3757, #131537);
   color: white;
-  height: 100vh;
 }
 
 .index-containerPrincipal{
@@ -37,11 +36,25 @@ body {
   margin-top: 100px;
 }
 
+@media screen and (width>768px) {
+  .index-mode-play{
+  display: flex;
+  flex-direction: row;
+  }
+}
+
 .index-game-simple{
   display: flex;
   flex-direction: column;
   text-align: center;
+  
+}
 
+@media screen and (width>768px){
+  .index-game-simple{
+    margin-top: 100px;
+    margin-right: 80px;
+  }
 }
 
 .index-simple-text{
@@ -82,7 +95,17 @@ body {
   margin-right: auto;
   border: solid #565468 ;
   border-radius: 5px;
+}
 
+@media screen and (width>768px) {
+  .simple-container-header{
+    width: 700px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 48px;
+  }
 }
 
 .simple-player-number{
@@ -94,6 +117,14 @@ body {
   margin-left: 12px;
   background-color: white;
   border-radius: 4px;
+}
+
+@media screen and (width>768px) {
+  .simple-player-number{
+  width: 100px;
+  height: 88px;
+  border-radius: 15px;
+  }
 }
 
 .simple-box-left{
@@ -128,6 +159,14 @@ body {
   margin-right: 12px;
   background-color: white;
   border-radius: 4px;
+}
+
+@media screen and (width>768px){
+  .simple-pc-number{
+  width: 100px;
+  height: 88px;
+  border-radius: 15px;
+  }
 }
 
 .simple-box-right{
