@@ -27,7 +27,7 @@ const result = paper => {
         }
     else if (userPlay) 
         {
-            
+            console.log("")
         }
     else if (paper > rock) 
         {
