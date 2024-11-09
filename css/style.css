@@ -288,8 +288,8 @@ body {
   border: 20px solid #4664F4;
   bottom: 245px;
   left: 10px;
+  box-shadow: inset 0 5px #BABFD4, 0 5px #2A45C2;
 }
-
 @media screen and (width>768px){
   .box1{
     width: 150px;
@@ -310,6 +310,7 @@ body {
   border: 20px solid #EB9F0E;
   bottom: 380px;
   left: 170px;
+  box-shadow: inset 0 5px #BABFD4, 0 6px #C76C1B;
 }
 
 @media screen and (width>768px){
@@ -332,6 +333,7 @@ body {
   border: 20px solid #DB2E4D;
   bottom: 340px;
   left: 90px;
+  box-shadow: inset 0 5px #BABFD4, 0 6px #9D1634;
 }
 
 @media screen and (width>768px){

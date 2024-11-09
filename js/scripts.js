@@ -1,6 +1,8 @@
 const simpleContainerElement = document.getElementById("simple-container")
 let userPlay
 let pcPlay
+
+//suma de victorias
 let scoreUser = 0
 let scorePc = 0
 
@@ -9,7 +11,7 @@ const pointPcElement = document.getElementById("simple-point-pc")
 
 
 const simpleClick = event => {
-    console.log(event.target.dataset.img)
+    //console.log(event.target.dataset.img)
     userPlay = event.target.dataset.img
     electionPc()
     
@@ -48,16 +50,6 @@ const result = () => {
         }
     
 }
-
-
-
-
-
-
-
-
-
-
 
 
 simpleContainerElement.addEventListener("click", simpleClick)
