@@ -31,6 +31,7 @@ const result = () => {
         {
             scoreUser += 0
             scorePc += 0
+            //console.log(`${userPlay} empata ${pcPlay}`)
         }
 
 
