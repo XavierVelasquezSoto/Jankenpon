@@ -27,23 +27,23 @@ const result = () => {
     
     if ( userPlay === pcPlay) //empate jankenpon
         {
-            pointUserElement.textContent = 0
-            pointPcElement.textContent = 0
+            scoreUser += 0
+            scorePc += 0
         }
 
 
     else if (userPlay === "rock" && pcPlay ==="scissors" || userPlay === "paper" && pcPlay ==="rock" || userPlay === "scissors" && pcPlay ==="paper") //variables de victoria
         {
-            pointUserElement.textContent = 1
-            pointPcElement.textContent = 0            
+            scoreUser += 1
+            pointUserElement.textContent = scoreUser    
             //console.log(`${userPlay} gana a ${pcPlay}`)
         }
 
 
     else if (userPlay === "rock" && pcPlay ==="paper" || userPlay === "paper" && pcPlay ==="scissors" || userPlay === "scissors" && pcPlay ==="rock") //variables de derrota
         {    
-            pointUserElement.textContent = 0
-            pointPcElement.textContent = 1
+            scorePc += 1
+            pointPcElement.textContent = scorePc
             //console.log(`${userPlay} pierde contra ${pcPlay}`)    
         }
     
