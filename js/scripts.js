@@ -1,7 +1,11 @@
 const simpleContainerElement = document.getElementById("simple-container")
 let userPlay
 let pcPlay
+let scoreUser = 0
+let scorePc = 0
 
+const pointUserElement = document.getElementById("simple-point-user")
+const pointPcElement = document.getElementById("simple-point-pc")
 
 
 const simpleClick = event => {
@@ -23,19 +27,24 @@ const result = () => {
     
     if ( userPlay === pcPlay) //empate jankenpon
         {
-            console.log(`${userPlay} empata con ${pcPlay}`)
+            pointUserElement.textContent = 0
+            pointPcElement.textContent = 0
         }
 
 
     else if (userPlay === "rock" && pcPlay ==="scissors" || userPlay === "paper" && pcPlay ==="rock" || userPlay === "scissors" && pcPlay ==="paper") //variables de victoria
         {
-            console.log(`${userPlay} gana a ${pcPlay}`)
+            pointUserElement.textContent = 1
+            pointPcElement.textContent = 0            
+            //console.log(`${userPlay} gana a ${pcPlay}`)
         }
 
 
     else if (userPlay === "rock" && pcPlay ==="paper" || userPlay === "paper" && pcPlay ==="scissors" || userPlay === "scissors" && pcPlay ==="rock") //variables de derrota
         {    
-            console.log(`${userPlay} pierde contra ${pcPlay}`)    
+            pointUserElement.textContent = 0
+            pointPcElement.textContent = 1
+            //console.log(`${userPlay} pierde contra ${pcPlay}`)    
         }
     
 }
