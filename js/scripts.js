@@ -19,20 +19,25 @@ const electionPc = () => {
 }
 
 
-const result = paper => {
+const result = () => {
     
-    if ( userPlay === pcPlay)
+    if ( userPlay === pcPlay) //empate jankenpon
         {
-            console.log("empate")
+            console.log(`${userPlay} empata con ${pcPlay}`)
         }
-    else if (userPlay) 
+
+
+    else if (userPlay === "rock" && pcPlay ==="scissors" || userPlay === "paper" && pcPlay ==="rock" || userPlay === "scissors" && pcPlay ==="paper") //variables de victoria
         {
-            console.log("")
+            console.log(`${userPlay} gana a ${pcPlay}`)
         }
-    else if (paper > rock) 
-        {
-            
+
+
+    else if (userPlay === "rock" && pcPlay ==="paper" || userPlay === "paper" && pcPlay ==="scissors" || userPlay === "scissors" && pcPlay ==="rock") //variables de derrota
+        {    
+            console.log(`${userPlay} pierde contra ${pcPlay}`)    
         }
+    
 }
 
 
