@@ -11,7 +11,7 @@ const pointUserElement = document.getElementById("simple-point-user")
 const pointPcElement = document.getElementById("simple-point-pc")
 
 //oculta o reinicia el juego
-const buttonMiddleElement = document.getElementById("button-middle")
+const buttonMiddleElement = document.getElementById("button-play")
 const modePlayElement = document.getElementById("simple-mode-play")
 const resultJankenponElement = document.getElementById("result-jankenpon")
 
@@ -30,7 +30,6 @@ const simpleClick = event => {
     userPlay = event.target.dataset.img
     electionPc()
     playAgainShow()
-    buttonMiddle()
 }
 
 const electionPc = () => {
@@ -73,18 +72,16 @@ const result = () => {
 
 const playAgainShow = () => {
     console.log("show")
-    modePlayElement.classList.add("simple-mode-play-hiden")
-    resultJankenponElement.classList.remove("simple-result-hiden")
-    
+    modePlayElement.classList.add("simple-mode-play-hidden")
+    resultJankenponElement.classList.add("simple-result-show")
 }
+
+//funcion button play again
 
 const buttonMiddle = () => {
-    console.log("hidden")
-    buttonMiddleElement.classList.remove("simple-result")
-    buttonMiddleElement.classList.remove("simple-mode-play-hiden")
-    buttonMiddleElement.classList.add("simple-mode-play")
+    modePlayElement.classList.remove("simple-mode-play-hidden")
+    resultJankenponElement.classList.remove("simple-result-show")
 }
-
 
 //funciones de modal
 
@@ -105,11 +102,9 @@ const hidenModal = () => {
 
 
 
-simpleContainerElement.addEventListener("click", simpleClick)
+simpleContainerElement.addEventListener("click", simpleClick)  //dataset localizador click
 
-
-/* modePlayElement.addEventListener("click", playAgainShow)
-resultJankenponElement.addEventListener("click", playAgainHiden) */
+buttonMiddleElement.addEventListener("click", buttonMiddle)
 
 buttonRulesElement.addEventListener("click", showModal)
 simpleModalRulesElement.addEventListener("click", hidenModal)
