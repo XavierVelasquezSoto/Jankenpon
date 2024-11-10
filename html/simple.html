@@ -34,9 +34,10 @@
         </div>
       </div>
     </header>
+
     <main>
       <div id="simple-container" class="simple-container">
-        <div class="simple-mode-play">
+        <div id="simple-mode-play" class="simple-mode-play">
           <div id="box-colors" class="simple-game">
             <img
               src="../assets/images/bg-triangle.svg"
@@ -74,10 +75,40 @@
           </div>
         </div>
       </div>
-      <div class="simple-result"></div>
+
+      <div id="result-jankenpon" class="simple-result">
+        <div class="color-user">
+          <h2 class="h2-user">Your Picked</h2>
+          <img
+            class="button-paper-user"
+            src="../assets/images/icon-paper.svg"
+            alt=""
+          />
+        </div>
+        <div id="button-middle" class="button-middle">
+          <h2 class="result-text">TIE</h2>
+          <button id="button-play" class="button-play">PLAY AGAIN</button>
+        </div>
+        <div>
+          <div class="color-pc">
+            <h2 class="h2-pc">PC Picked</h2>
+            <img
+              class="button-paper-pc"
+              src="../assets/images/icon-paper.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </main>
-    <button class="button-rules">RULES</button>
-    <div></div>
+    <button id="button-rules" class="button-rules">RULES</button>
+    <div id="simple-modal-rules" class="simple-modal-rules">
+      <img
+        class="img-modal-rules"
+        src="../assets/images/image-rules.svg"
+        alt="modal-rules"
+      />
+    </div>
     <script src="../js/scripts.js"></script>
   </body>
 </html>
