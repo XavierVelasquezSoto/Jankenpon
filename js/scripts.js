@@ -40,6 +40,10 @@ const simpleClick = event => {
   electionPc();
   playAgainShow();
   imgUserlectionElement.src = `../assets/images/icon-${userPlay}.svg`;
+  /* const classes = userResultIconContainer.classlist */
+  /* const lastClass = classes[userResultIconContainer.clasList.length - 1] */
+  /* userResultIconContainer.classlist.add(userchoice); */
+  /* userResultIconContainer.classlist.add(userchoice); */
 };
 
 const electionPc = () => {

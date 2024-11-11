@@ -555,6 +555,33 @@ body {
   bottom: 292px; */
 }
 
+.color-pc-scissor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 100%;
+  border: 20px solid #4664f4;
+  box-shadow: inset 0 5px #babfd4, 0 5px #2a45c2;
+  width: 130px;
+  height: 133px;
+  /*   left: 255px;
+  bottom: 292px; */
+}
+
+.color-pc-rock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 100%;
+  border: 20px solid #4664f4;
+  box-shadow: inset 0 5px #babfd4, 0 5px #2a45c2;
+  width: 130px;
+  height: 133px;
+  /*   left: 255px;
+  bottom: 292px; */
+}
 .h2-pc {
   position: relative;
   margin: 0;
