@@ -43,8 +43,8 @@ const simpleClick = event => {
 };
 
 const electionPc = () => {
-  const randomNumber = Math.floor(Math.random() * 3);
   const pcOptions = ['paper', 'scissors', 'rock'];
+  const randomNumber = Math.floor(Math.random() * pcOptions.length); // vale * pcOptions.length o * 3
   pcPlay = pcOptions[randomNumber];
   result();
   imgPcElectionElement.src = `../assets/images/icon-${pcPlay}.svg`;
