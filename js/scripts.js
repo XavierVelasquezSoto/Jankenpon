@@ -15,6 +15,10 @@ const buttonMiddleElement = document.getElementById("button-play")
 const modePlayElement = document.getElementById("simple-mode-play")
 const resultJankenponElement = document.getElementById("result-jankenpon")
 
+// win or lose
+
+const winLoseElement = document.getElementById("win-lose")
+
 
 //botón de reglas
 
@@ -22,6 +26,10 @@ const buttonRulesElement = document.getElementById("button-rules")
 const simpleModalRulesElement = document.getElementById("simple-modal-rules")
 
 
+// test img
+
+const imgUserlectionElement = document.getElementById("election-user")
+const imgPcElectionElement = document.getElementById("election-pc")
 
 ////
 
@@ -34,7 +42,7 @@ const simpleClick = event => {
 
 const electionPc = () => {
     const randomNumber = Math.floor(Math.random() * 3)
-    const pcOptions = ["rock", "paper", "scissors"]
+    const pcOptions = ["paper", "scissors", "rock"]
     pcPlay = pcOptions[randomNumber]
     result()
 }
@@ -44,8 +52,9 @@ const result = () => {
     
     if ( userPlay === pcPlay) //empate jankenpon
         {
-            scoreUser += 0
-            scorePc += 0
+            /* scoreUser += 0
+            scorePc += 0 */
+            winLoseElement.textContent = `TIE` 
             //console.log(`${userPlay} empata ${pcPlay}`)
         }
 
@@ -53,7 +62,8 @@ const result = () => {
     else if (userPlay === "rock" && pcPlay ==="scissors" || userPlay === "paper" && pcPlay ==="rock" || userPlay === "scissors" && pcPlay ==="paper") //variables de victoria
         {
             scoreUser += 1
-            pointUserElement.textContent = scoreUser    
+            pointUserElement.textContent = scoreUser
+            winLoseElement.textContent = `Win`    
             //console.log(`${userPlay} gana a ${pcPlay}`)
         }
 
@@ -62,6 +72,7 @@ const result = () => {
         {    
             scorePc += 1
             pointPcElement.textContent = scorePc
+            winLoseElement.textContent = `Lose`
             //console.log(`${userPlay} pierde contra ${pcPlay}`)    
         }
     
@@ -71,7 +82,7 @@ const result = () => {
 //funcion Play Again
 
 const playAgainShow = () => {
-    console.log("show")
+    //console.log("show")
     modePlayElement.classList.add("simple-mode-play-hidden")
     resultJankenponElement.classList.add("simple-result-show")
 }
@@ -81,6 +92,17 @@ const playAgainShow = () => {
 const buttonMiddle = () => {
     modePlayElement.classList.remove("simple-mode-play-hidden")
     resultJankenponElement.classList.remove("simple-result-show")
+}
+
+
+// img user - pc
+
+const imgUser = () => {
+    imgUserlectionElement.src
+}
+
+const imgPc = () => {
+    imgPcElectionElement
 }
 
 //funciones de modal
@@ -93,10 +115,6 @@ const showModal = () => {
 const hidenModal = () => {
     simpleModalRulesElement.classList.remove("simple-modal-rules-show")
 }
-
-
-
-
 
 
 
