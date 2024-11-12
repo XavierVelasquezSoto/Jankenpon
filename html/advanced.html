@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,24 +13,125 @@
     <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="simple-title-combat">
+        <div class="simple-container-header">
+          <div class="simple-player-number">
+            <span class="simple-box-left">YOU </span>
+            <span id="simple-point-user" class="simple-number1">0</span>
+          </div>
+
+          <div class="simple-title-center">
+            <span class="simple-text-rock">ROCK</span>
+            <span class="simple-text-paper">PAPER</span>
+            <span class="simple-text-scissors">SCISSORS</span>
+          </div>
+
+          <div class="simple-pc-number">
+            <span class="simple-box-right">PC </span>
+            <span id="simple-point-pc" class="simple-number2">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main>
-      <div class="container-Advanced">
-        <div class="mode-play">
-          <a href="advanced.html">
-            <div class="game-advanced">
+      <div id="simple-container" class="simple-container">
+        <div id="simple-mode-play" class="simple-mode-play">
+          <img
+            src="../assets/images/bg-pentagon.svg"
+            alt="triangle"
+            class="advanced-img"
+          />
+          <div id="box-colors" class="simple-game">
+            <div id="election-paper" class="advanced-color-paper paper">
               <img
-                src="../assets/images/bg-pentagon.svg"
-                alt="advancedPage"
-                class="advanced-img"
+                data-img="paper"
+                id="simple-paper"
+                class="advanced-paper"
+                src="../assets/images/icon-paper.svg"
+                alt="paper"
               />
             </div>
-          </a>
+
+            <div
+              id="election-scissors"
+              class="advanced-color-scissors scissors"
+            >
+              <img
+                data-img="scissors"
+                id="simple-scissors"
+                class="advanced-scissors"
+                src="../assets/images/icon-scissors.svg"
+                alt="scissors"
+              />
+            </div>
+            <div id="election-rock" class="advanced-color-rock rock">
+              <img
+                data-img="rock"
+                id="simple-rock"
+                class="advanced-rock"
+                src="../assets/images/icon-rock.svg"
+                alt="rock"
+              />
+            </div>
+            <div id="election-rock" class="advanced-color-lizard lizard">
+              <img
+                data-img="lizard"
+                id="simple-lizard"
+                class="advanced-lizard"
+                src="../assets/images/icon-lizard.svg"
+                alt="rock"
+              />
+            </div>
+            <div id="election-rock" class="advanced-color-spock spock">
+              <img
+                data-img="spock"
+                id="simple-spock"
+                class="advanced-spock"
+                src="../assets/images/icon-spock.svg"
+                alt="spock"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="result-jankenpon" class="simple-result">
+        <div id="user-color-result" class="color-user">
+          <h2 class="h2-user">Your Picked</h2>
+          <img
+            id="election-user"
+            class="button-paper-user"
+            src="../assets/images/icon-paper.svg"
+            alt=""
+          />
+        </div>
+
+        <div id="button-middle" class="button-middle">
+          <h2 id="win-lose" class="result-text">TIE OR WIN</h2>
+          <button id="button-play" class="button-play">PLAY AGAIN</button>
+        </div>
+
+        <div id="pc-color-result" class="color-pc">
+          <h2 class="h2-pc">PC Picked</h2>
+          <img
+            id="election-pc"
+            class="button-paper-pc"
+            src="../assets/images/icon-paper.svg"
+            alt=""
+          />
         </div>
       </div>
     </main>
-    <button></button>
-    <div></div>
-    <script src="./js/scripts.js"></script>
+    <button id="button-rules" class="button-rules">RULES</button>
+    <div id="simple-modal-rules" class="simple-modal-rules">
+      <img
+        class="img-modal-rules"
+        src="../assets/images/image-rules.svg"
+        alt="modal-rules"
+      />
+    </div>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>

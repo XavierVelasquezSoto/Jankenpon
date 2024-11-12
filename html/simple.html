@@ -38,36 +38,36 @@
     <main>
       <div id="simple-container" class="simple-container">
         <div id="simple-mode-play" class="simple-mode-play">
+          <img
+            src="../assets/images/bg-triangle.svg"
+            alt="triangle"
+            class="simple-img"
+          />
           <div id="box-colors" class="simple-game">
-            <img
-              src="../assets/images/bg-triangle.svg"
-              alt="triangle"
-              class="simple-img"
-            />
-            <div id="election-paper" class="box1">
+            <div id="election-paper" class="color-paper paper">
               <img
                 data-img="paper"
                 id="simple-paper"
-                class="simple-paper"
+                class="icon-paper"
                 src="../assets/images/icon-paper.svg"
                 alt="paper"
               />
             </div>
 
-            <div id="election-scissors" class="box2">
+            <div id="election-scissors" class="color-scissors">
               <img
                 data-img="scissors"
                 id="simple-scissors"
-                class="simple-scissors"
+                class="icon-scissors"
                 src="../assets/images/icon-scissors.svg"
                 alt="scissors"
               />
             </div>
-            <div id="election-rock" class="box3">
+            <div id="election-rock" class="color-rock">
               <img
                 data-img="rock"
                 id="simple-rock"
-                class="simple-rock"
+                class="icon-rock"
                 src="../assets/images/icon-rock.svg"
                 alt="rock"
               />
@@ -77,7 +77,7 @@
       </div>
 
       <div id="result-jankenpon" class="simple-result">
-        <div class="color-user">
+        <div id="user-color-result" class="color-user">
           <h2 class="h2-user">Your Picked</h2>
           <img
             id="election-user"
@@ -86,20 +86,20 @@
             alt=""
           />
         </div>
+
         <div id="button-middle" class="button-middle">
           <h2 id="win-lose" class="result-text">TIE OR WIN</h2>
           <button id="button-play" class="button-play">PLAY AGAIN</button>
         </div>
-        <div>
-          <div class="color-pc">
-            <h2 class="h2-pc">PC Picked</h2>
-            <img
-              id="election-pc"
-              class="button-paper-pc"
-              src="../assets/images/icon-paper.svg"
-              alt=""
-            />
-          </div>
+
+        <div id="pc-color-result" class="color-pc">
+          <h2 class="h2-pc">PC Picked</h2>
+          <img
+            id="election-pc"
+            class="button-paper-pc"
+            src="../assets/images/icon-paper.svg"
+            alt=""
+          />
         </div>
       </div>
     </main>
