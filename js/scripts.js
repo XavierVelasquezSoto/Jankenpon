@@ -102,8 +102,8 @@ const electionPc = () => {
 
   const classUser = pcColorResultElement.classList
   const lastClass = classUser[pcColorResultElement.classList.length - 1]
-  pcColorResultElement.classList.add(pcPlay);
   pcColorResultElement.classList.remove(lastClass);
+  pcColorResultElement.classList.add(pcPlay);
 };
 
 const result = () => {

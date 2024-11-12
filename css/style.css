@@ -287,8 +287,8 @@ body {
     width: 150px;
     height: 150px;
     border: 25px solid #4664f4;
-    bottom: 350px;
-    left: -20px;
+    bottom: 320px;
+    left: 0px;
     transition: scale 0.25s;
   }
 
@@ -314,8 +314,8 @@ body {
     width: 150px;
     height: 150px;
     border: 25px solid #eb9f0e;
-    bottom: 500px;
-    left: 200px;
+    bottom: 410px;
+    left: 220px;
     transition: scale 0.25s;
   }
   .box2:hover {
@@ -340,8 +340,8 @@ body {
     width: 150px;
     height: 150px;
     border: 25px solid #db2e4d;
-    bottom: 420px;
-    left: 85px;
+    bottom: 260px;
+    left: 110px;
     transition: scale 0.25s;
   }
 
@@ -363,8 +363,8 @@ body {
 
 @media screen and (width>768px) {
   .icon-paper {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -372,8 +372,8 @@ body {
   position: absolute;
   width: 35px;
   height: 35px;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
   cursor: pointer;
 }
 
@@ -396,10 +396,10 @@ body {
 
 @media screen and (width>768px) {
   .icon-rock {
-    width: 60px;
-    height: 60px;
-    top: 20px;
-    left: 20px;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 10px;
   }
 }
 
@@ -492,10 +492,11 @@ body {
 }
 
 .button-paper-user {
-  width: 48px;
-  height: 56px;
+  width: 35px;
+  height: 35px;
   position: relative;
-  left: 20px;
+  bottom: 15px;
+  left: 15px;
 }
 
 /* botón medio */
@@ -555,10 +556,10 @@ body {
 
 .button-paper-pc {
   position: relative;
-  width: 48px;
-  height: 56px;
-  left: 20px;
-  bottom: 10px;
+  width: 35px;
+  height: 35px;
+  left: 15px;
+  bottom: 15px;
 }
 
 /* transición botones */
