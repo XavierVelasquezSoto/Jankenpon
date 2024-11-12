@@ -37,7 +37,6 @@ const pcColorResultElement = document.getElementById("pc-color-result")
 
 
 
-////
 
 // rules game
 
@@ -73,7 +72,12 @@ const gameRules = {
         paper: false
     }
   };
+  const pcOptions = ['paper', 'scissors', 'rock'];
 
+  if(document.body.dataset.mode === "advanced"){
+    pcOptions.push("lizard", "spock")
+  }
+  
 
 const simpleClick = event => {
   if (!event.target.dataset.img) {
@@ -90,11 +94,10 @@ const simpleClick = event => {
   userColorResultElement.classList.remove(lastClass);
   userColorResultElement.classList.add(userPlay);
 
-  electionPc()
+  /* electionPc() */
 };
 
 const electionPc = () => {
-  const pcOptions = ['paper', 'scissors', 'rock'];
   const randomNumber = Math.floor(Math.random() * pcOptions.length); // vale * pcOptions.length o * 3
   pcPlay = pcOptions[randomNumber];
   result();
